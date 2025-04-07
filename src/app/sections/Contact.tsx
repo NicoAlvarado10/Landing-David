@@ -5,10 +5,10 @@ import barberImg from '../../../public/assets/barber.webp';
 export default function Contact() {
   return (
     <section className="contact py-16">
-      <div className="max-w-[1900px] mx-auto grid grid-cols-2 max-lg:grid-cols-1">
+      <div className=" mx-auto flex max-md:flex-col max-xl:max-w-full  max-lg:grid-cols-1">
 
         {/* Texto y datos */}
-        <div className="gradiente flex flex-col px-32 max-lg:px-20 py-24 max-sm:py-12 gap-2">
+        <div className="gradiente basis-6/12 flex flex-col px-32 max-lg:px-20 py-24 max-sm:py-12 gap-2">
 
           <motion.h2
             className="text-5xl max-md:text-5xl max-sm:text-3xl font-sedan tracking-widest max-lg:text-center"
@@ -20,7 +20,7 @@ export default function Contact() {
             Contacto y Reservas
           </motion.h2>
 
-          <div className="mt-6">
+          <div className="mt-6 ">
             <motion.h3
               className="mb-6 text-3xl max-sm:text-2xl font-sedan tracking-widest"
               initial={{ opacity: 0, y: 30 }}
@@ -57,7 +57,7 @@ export default function Contact() {
         </div>
 
         {/* Imagen */}
-        <div>
+        <div className='basis-6/12'>
           <img 
             src={barberImg.src} 
             alt="Imagen de Barbería"

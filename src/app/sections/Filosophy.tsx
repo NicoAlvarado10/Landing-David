@@ -5,11 +5,11 @@ import menImg from '../../../public/assets/filosophy.webp'
 export const Filosophy = () => {
   return (
     <section className="py-20 max-md:py-10 filosofia">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex max-md:flex-col-reverse gap-12 max-md:gap-4 justify-between">
+      <div className="max-w-9/12 max-xl:max-w-11/12 mx-auto px-4">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 max-md:gap-4 justify-between">
 
           {/* Texto animado */}
-          <div className="w-full basis-6/12 flex flex-col gap-6">
+          <div className="w-full mx-auto  flex flex-col gap-6 max-md:order-2">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export const Filosophy = () => {
 
           {/* Imagen animada */}
           <motion.div
-            className="h-full"
+            className="h-full w-full"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}

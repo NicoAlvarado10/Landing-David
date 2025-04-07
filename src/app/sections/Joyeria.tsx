@@ -5,12 +5,12 @@ import joyeryImg from '../../../public/assets/joyery-2.webp'
 export const Joyeria = () => {
   return (
     <section className="py-20 max-md:py-10">
-      <div className="max-w-7xl mx-auto px-4 joyeria">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 max-md:gap-6 justify-between">
+      <div className="max-w-11/12  mx-auto px-4 joyeria">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 max-md:gap-6 justify-between">
 
           {/* Imagen animada */}
           <motion.div
-            className="w-full h-full"
+            className="w-full h-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -18,13 +18,13 @@ export const Joyeria = () => {
           >
             <img
               src={joyeryImg.src}
-              className="h-full drop-shadow-img mx-auto object-cover joyeria-img"
+              className="h-full drop-shadow-img mx-auto  object-cover joyeria-img"
               alt="Imagen de joyería"
             />
           </motion.div>
 
           {/* Texto animado */}
-          <div className="w-full">
+          <div className="w-full ">
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

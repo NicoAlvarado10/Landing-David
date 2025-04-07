@@ -13,19 +13,19 @@ export default function Hero() {
     <>
       <section
         style={{ backgroundImage: `url(${ellipseImg.src})` }}
-        className="h-screen max-2xl:h-full mx-auto py-12 min-[1700px]:py-40 bg-center bg-cover bg-no-repeat overflow-hidden"
+        className="h-screen h max-2xl:h-full  mx-auto  bg-center bg-cover bg-no-repeat py-12"
       >
-        <div className="grid grid-cols-3 max-w-7xl mx-auto grid-rows-1 justify-center items-center px-4 max-md:grid-cols-1 max-md:grid-rows-auto gap-6 relative z-40">
+        <div className="grid grid-cols-3 max-w-[80%] max-2xl:max-w-11/12 mx-auto grid-rows-1 justify-center items-center px-4 max-md:grid-cols-1 max-md:grid-rows-auto gap-6 max-sm:gap-0 relative z-40 ">
 
           {/* Título */}
           <motion.div
-            className="py-4 max-md:order-1 max-md:text-center"
+            className="p-4  max-md:order-1 max-md:text-center"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h1 className="text-4xl max-sm:text-2xl tracking-widest flex flex-col gap-4">
+            <h1 className="text-4xl max-sm:text-2xl tracking-widest flex flex-col gap-4 ">
               De la adversidad <br />
               <span className="text-primary tracking-widest max-sm:text-5xl text-7xl">
                 AL ÉXITO
@@ -41,7 +41,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <p className="text-sm tracking-widest flex flex-col">
+            <p className="text-sm tracking-widest flex flex-col max-md:flex-col-reverse max-md:gap-4 ">
               <img
                 src={starsImg.src}
                 alt="imagen de Estrellas"
@@ -56,7 +56,7 @@ export default function Hero() {
 
           {/* Imagen del héroe */}
           <motion.div
-            className="col-start-2 max-md:col-auto row-start-2 max-md:row-auto p-4 max-md:order-3"
+            className="col-start-2 max-md:col-auto row-start-2 max-md:row-auto p-4 max-md:order-3 "
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -65,20 +65,20 @@ export default function Hero() {
             <img
               src={heroImg.src}
               alt="Imagen de David Navarro"
-              className="object-cover z-40 max-sm:w-8/12 w-full mx-auto"
+              className="object-cover z-40 max-md:w-6/12 max-sm:w-8/12 w-full mx-auto"
             />
           </motion.div>
 
           {/* Lista 1 */}
           <motion.div
-            className="row-start-3 max-md:row-auto p-4 max-md:order-4"
+            className="row-start-2 max-md:row-auto pt-56 max-md:pt-0 max-md:order-4 "
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
           >
             <ul>
-              <li className="lista tracking-widest text-sm">
+              <li className="lista li tracking-widest text-sm">
                 Laocoön and His Sons, also known as the <br />
                 Laocoön Group
               </li>
@@ -87,14 +87,14 @@ export default function Hero() {
 
           {/* Lista 2 */}
           <motion.div
-            className="col-start-3 max-md:col-auto row-start-3 max-md:row-auto p-4 max-md:order-5"
+            className="col-start-3 max-md:col-auto row-start-2 pt-96 max-md:pt-0 max-md:row-auto max-md:order-5  "
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             viewport={{ once: true }}
           >
             <ul>
-              <li className="lista tracking-widest text-sm">
+              <li className="lista li tracking-widest text-sm ">
                 A Marble Head of Zeus, Roman Imperial,<br />
                 late 1st/2nd Century A.D
               </li>

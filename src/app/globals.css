@@ -18,6 +18,73 @@
     scroll-behavior: smooth;
 }
 
+h1{
+  font-size: max(20px, 1.5vw);
+}
+h1 > span{
+  font-size: max(50px, 4.6vw);
+}
+
+.li {
+  font-size: max(12px, 0.8vw);
+}
+
+.h p {
+  font-size: max(12px, 0.7vw);
+}
+
+@media (max-width:768px ){
+  .history article p, li {
+    font-size:10px;
+  } 
+}
+
+#barber-section h2 {
+  font-size: max(40px, 2.5vw);
+}
+#barber-section h3 {
+  font-size: max(10px, 1vw);
+}
+#barber-section p {
+  font-size: max(20px, 1vw);
+}
+#barber-section a {
+  font-size: max(20px, 1vw);
+}
+.joyeria h2 {
+  font-size: max(40px, 2.5vw);
+}
+.joyeria p {
+  font-size: max(20px, 1vw);
+}
+.joyeria a {
+  font-size: max(20px, 1vw);
+}
+.joyeria h3{
+  font-size: max(10px, 1vw);
+}
+.history p{
+  font-size: max(15px, 1vw);
+}
+
+.filosofia h2 {
+  font-size: max(40px, 2.5vw);
+}
+.filosofia p {
+  font-size: max(20px, 1vw);
+}
+
+
+.testimonios h2 {
+  font-size: max(10px, 1vw);
+}
+.testimonios h3 {
+  font-size: max(40px, 2.5vw);
+}
+
+.contact h2 {
+  font-size: max(40px, 2.5vw);
+}
 @layer utilities {
   .btn {
     text-align: center;
@@ -37,7 +104,7 @@
 
     @media (max-width:768px ){
         .btn{
-            padding: 4px 10px;
+            padding: 5px 20px;
         }
     }
 }
@@ -63,7 +130,7 @@ ul{
     width: 400vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  
+    height: 100%;
     gap: 1rem;
   }
   
@@ -71,17 +138,16 @@ ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 100%;
     transition: 0.3s;
   }
+
+
   
   
   
   @media (max-width:760px ){
-      .scroll-section-inner article{
-        height: 100%;
-        
-      }
+      
       .scroll-section-outer {
         overflow: hidden;
         height: 100%;
@@ -91,24 +157,25 @@ ul{
 
   .scroll-wrapper {
     position: absolute;
-    top: 30%;
+    top:50%;
     left: 0;
     width: 100%;
     overflow: hidden;
     pointer-events: none;
     z-index: 0;
+    height: 100%;
   }
 
   .scroll-track {
     display: inline-flex;
     gap: 4rem;
-    animation: scroll 40s linear infinite;
+    animation: scroll 60s linear infinite;
     will-change: transform;
     white-space: nowrap;
   }
 
   .scroll-word {
-    font-size: 15rem;
+    font-size: max(7rem, 12vw);
     font-weight: bold;
     color: rgb(156 163 175);
     opacity: 0.1;
@@ -155,11 +222,6 @@ ul{
   }
 
 
-  .circle {
-    width: 420px;
-    height: 420px;
-    background-size: cover;
-  }
   
   @media (max-width: 768px) {
     .circle {
