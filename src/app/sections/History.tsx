@@ -9,29 +9,27 @@ function History() {
 
   
   useEffect(() => {
-
-      gsap.registerPlugin(ScrollTrigger);
-    
-      const pin = gsap.fromTo(
+    gsap.registerPlugin(ScrollTrigger);
+  
+    const pin = gsap.fromTo(
       sectionRef.current,
       {
         translateX: 0,
       },
       {
         translateX: "-300vw",
-        ease: "none",
-        duration: 1,
+        ease: "power1.inOut", // suavidad
         scrollTrigger: {
           trigger: triggerRef.current,
           start: "top top",
           end: "2000 top",
-          scrub: 0.6,
-          pin: true
+          scrub: 1.5, // más fluido
+          pin: true,
         },
       }
     );
+  
     return () => {
-      {/* A return function for killing the animation on component unmount */ }
       pin.kill();
     };
   }, []);
