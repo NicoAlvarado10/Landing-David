@@ -33,50 +33,56 @@ h1 > span{
   font-size: max(12px, 0.7vw);
 }
 
+.history h2 {
+  font-size: max(20px, 2.5vw);
+}
+.history h3 {
+  font-size: max(12px, 0.7vw);
+}
 @media (max-width:768px ){
   .history article p, li {
-    font-size:10px;
+    font-size:12px;
   } 
 }
 
 #barber-section h2 {
-  font-size: max(40px, 2.5vw);
+  font-size: max(35px, 2.5vw);
 }
 #barber-section h3 {
-  font-size: max(10px, 1vw);
+  font-size: max(12px, 1vw);
 }
 #barber-section p {
-  font-size: max(20px, 1vw);
+  font-size: max(15px, 1vw);
 }
 #barber-section a {
   font-size: max(20px, 1vw);
 }
 .joyeria h2 {
-  font-size: max(40px, 2.5vw);
+  font-size: max(35px, 2.5vw);
 }
 .joyeria p {
-  font-size: max(20px, 1vw);
+  font-size: max(15px, 1vw);
 }
 .joyeria a {
   font-size: max(20px, 1vw);
 }
 .joyeria h3{
-  font-size: max(10px, 1vw);
+  font-size: max(12px, 1vw);
 }
 .history p{
   font-size: max(15px, 1vw);
 }
 
 .filosofia h2 {
-  font-size: max(40px, 2.5vw);
+  font-size: max(30px, 2.5vw);
 }
 .filosofia p {
-  font-size: max(20px, 1vw);
+  font-size: max(15px, 1vw);
 }
 
 
 .testimonios h2 {
-  font-size: max(10px, 1vw);
+  font-size: max(12px, 1vw);
 }
 .testimonios h3 {
   font-size: max(40px, 2.5vw);

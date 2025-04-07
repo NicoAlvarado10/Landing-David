@@ -15,7 +15,7 @@ export default function Hero() {
         style={{ backgroundImage: `url(${ellipseImg.src})` }}
         className="h-screen h max-2xl:h-full  mx-auto  bg-center bg-cover bg-no-repeat py-12"
       >
-        <div className="grid grid-cols-3 max-w-[80%] max-2xl:max-w-11/12 mx-auto grid-rows-1 justify-center items-center px-4 max-md:grid-cols-1 max-md:grid-rows-auto gap-6 max-sm:gap-0 relative z-40 ">
+        <div className="grid grid-cols-3 max-w-11/12 max-2xl:max-w-11/12 mx-auto grid-rows-1 justify-center items-center px-4 max-md:grid-cols-1 max-md:grid-rows-auto gap-6 max-sm:gap-0 relative z-40 ">
 
           {/* Título */}
           <motion.div
