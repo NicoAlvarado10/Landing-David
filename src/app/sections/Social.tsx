@@ -95,7 +95,7 @@ const Social = () => {
             Lo publicamos cada día en nuestra cuenta de Instagram
           </p>
           <a className="btn text-primary font-sedan text-lg max-sm:text-base" href="#">
-            ¡Síguenos!
+            Síguenos!
           </a>
         </motion.div>
       </div>
