@@ -8,7 +8,7 @@ export default function Contact() {
       <div className=" mx-auto flex max-md:flex-col max-xl:max-w-full  max-lg:grid-cols-1">
 
         {/* Texto y datos */}
-        <div className="gradiente basis-6/12 flex flex-col px-32 max-lg:px-20 py-24 max-sm:py-12 gap-2">
+        <div className="gradiente basis-6/12 flex flex-col justify-center px-32 max-lg:px-20 py-24 max-sm:py-12 gap-2">
 
           <motion.h2
             className="text-5xl max-md:text-5xl max-sm:text-3xl font-sedan tracking-widest max-lg:text-center"

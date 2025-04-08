@@ -5,7 +5,7 @@ import { Testimony } from '@components/app/components/Testimony'
 
 export default function Testimonials() {
   return (
-    <section className="flex flex-col py-10 max-w-9/12 max-xl:max-w-11/12 mx-auto testimonios">
+    <section className="flex flex-col py-20 max-w-9/12 max-xl:max-w-11/12 mx-auto testimonios">
       <motion.h2
         className="text-center font-quick tracking-widest font-extralight mb-6 uppercase"
         initial={{ opacity: 0, y: 30 }}
