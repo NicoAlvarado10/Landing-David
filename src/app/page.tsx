@@ -9,7 +9,7 @@ import PreFooter from "@components/app/sections/PreFooter";
 import { Footer } from "@components/app/sections/Footer";
 import {ScrollSection} from "@components/app/sections/ScrollSection";
 import { Timeline } from "./components/timeline/Timelime";
-import Carousel from "./components/Carousel";
+
 export default function Home() {
   return (
     <>
