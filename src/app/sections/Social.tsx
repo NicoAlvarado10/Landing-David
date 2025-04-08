@@ -3,6 +3,7 @@ import { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import { motion } from 'framer-motion'
+import type { Swiper as SwiperType } from 'swiper'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -18,17 +19,16 @@ import bgIgImg from '../../../public/assets/bg-ig.webp'
 
 const Social = () => {
   const images = [igImg1, igImg2, igImg3, igImg4, igImg5]
-  const swiperRef = useRef(null)
+  const swiperRef = useRef<SwiperType | null>(null)
 
   return (
     <section
       style={{ backgroundImage: `url(${bgIgImg.src})` }}
-      className="h-full bg-center py-10 bg-cover bg-no-repeat mx-auto flex justify-center items-center "
+      className="h-full bg-center py-10 bg-cover bg-no-repeat mx-auto flex justify-center items-center"
     >
-      <div className="max-w-11/12  flex flex-row max-md:flex-col px-4  w-full items-center">
-        
+      <div className="max-w-11/12 flex flex-row max-md:flex-col px-4 w-full items-center">
         {/* Slider Swiper */}
-        <div className="relative w-8/12 max-xl:w-11/12 flex-1">
+        <div className="relative w-1/2 max-xl:w-11/12 flex-1">
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             loop={true}
@@ -58,7 +58,7 @@ const Social = () => {
                   <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <img src={igLogoImg.src} alt="icono de instagram" />
                   </div>
-                </div> 
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
