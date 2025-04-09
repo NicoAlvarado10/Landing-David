@@ -23,14 +23,17 @@ h1{
 }
 h1 > span{
   font-size: max(65px, 5.9vw);
+ 
 }
 
 .li {
   font-size: max(12px, 0.8vw);
+  font-family: 'Helvetica';
 }
 
 .h p {
   font-size: max(12px, 0.7vw);
+  font-family: 'Helvetica';
 }
 
 .history h2 {

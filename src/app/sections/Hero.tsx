@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       style={{ backgroundImage: `url(${ellipseImg.src})` }}
-      className="relative h-screen max-2xl:h-full mx-auto bg-center bg-cover bg-no-repeat py-12 max-sm:pb-24"
+      className="relative h-screen h max-2xl:h-full mx-auto bg-center bg-cover bg-no-repeat py-12 max-sm:pb-24"
     >
       {/* Scroll horizontal detrás de todo */}
       <div className="scroll-wrapper hidden md:block">
