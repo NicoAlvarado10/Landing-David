@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const TimelineStep = ({ item, index }: { item: TimelineData; index: number }) => {
 	return (
 		<div
-			className="relative z-[2] mt-10 py-[80px]  grid grid-cols-[60px_1fr] md:grid-cols-[1fr_180px_1fr]"
+			className="relative z-[2] mt-10 py-[80px] grid grid-cols-[60px_1fr] md:grid-cols-[1fr_180px_1fr]"
 			style={{
 				gridGap: "0px",
 				gridAutoColumns: "1fr",
@@ -27,7 +27,7 @@ export const TimelineStep = ({ item, index }: { item: TimelineData; index: numbe
 				initial={{ opacity: 0, y: 30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6 }}
-				viewport={{ once: false, amount: 0.2 }}
+				viewport={{ once: true, amount: 0.2 }}
 			>
 				<h2
 					className="text-[48px] font-medium leading-[1.2] tracking-[-0.02em]"
@@ -53,12 +53,12 @@ export const TimelineStep = ({ item, index }: { item: TimelineData; index: numbe
 				/>
 			</div>
 
-			{/* RIGHT BLOCK - Content (orden dinámico y centrado siempre) */}
+			{/* RIGHT BLOCK - Content */}
 			<motion.div
 				initial={{ opacity: 0, y: 30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.6 }}
-				viewport={{ once: false, amount: 0.2 }}
+				viewport={{ once: true, amount: 0.2 }}
 				className={`opacity-40 hover:opacity-100 transition-opacity duration-300 w-full max-w-[600px] mx-auto order-2 ${
 					index % 2 === 0 ? "md:order-3" : "md:order-1"
 				}`}
@@ -70,7 +70,7 @@ export const TimelineStep = ({ item, index }: { item: TimelineData; index: numbe
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					viewport={{ once: false, amount: 0.2 }}
+					viewport={{ once: true, amount: 0.2 }}
 				>
 					<h2
 						className="text-[48px] font-medium leading-[1.2] tracking-[-0.02em]"
@@ -90,15 +90,15 @@ export const TimelineStep = ({ item, index }: { item: TimelineData; index: numbe
 							return (
 								<motion.p
 									key={i}
+									initial={{ opacity: 0, y: 30 }}
+									whileInView={{ opacity: 1, y: 0 }}
+									transition={{ duration: 0.6 }}
+									viewport={{ once: true, amount: 0.2 }}
 									className="text-xl tracking-wide leading-8"
 									style={{
 										color: "#f5f5f5",
 										fontFamily: "var(--font-syne)",
 									}}
-									initial={{ opacity: 0, y: 20 }}
-									whileInView={{ opacity: 1, y: 0 }}
-									transition={{ duration: 0.6 }}
-									viewport={{ once: true, amount: 0.2 }}
 								>
 									{block.text}
 								</motion.p>
@@ -109,15 +109,15 @@ export const TimelineStep = ({ item, index }: { item: TimelineData; index: numbe
 									{block.items.map((item, j) => (
 										<motion.li
 											key={j}
+											initial={{ opacity: 0, x: -20 }}
+											whileInView={{ opacity: 1, x: 0 }}
+											transition={{ duration: 0.6 }}
+											viewport={{ once: true, amount: 0.2 }}
 											className="text-lg tracking-wide flex items-start"
 											style={{
 												color: "#f5f5f5",
 												fontFamily: "var(--font-syne)",
 											}}
-											initial={{ opacity: 0, x: -10 }}
-											whileInView={{ opacity: 1, x: 0 }}
-											transition={{ duration: 0.6 }}
-											viewport={{ once: true, amount: 0.2 }}
 										>
 											<span
 												className="mr-2"

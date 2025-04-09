@@ -40,7 +40,7 @@ const Social = () => {
             navigation={true}
             spaceBetween={0}
             breakpoints={{
-              0: { slidesPerView: 2 },
+              0: { slidesPerView: 1 },
               640: { slidesPerView: 3 },
               1024: { slidesPerView: 4 },
             }}
@@ -48,13 +48,13 @@ const Social = () => {
             onSwiper={(swiper) => (swiperRef.current = swiper)}
           >
             {[...images, ...images].map((img, index) => (
-              <SwiperSlide key={index} className="p-2">
+              <SwiperSlide key={index} className="">
                 <div className="relative group rounded overflow-hidden shadow-md ">
                   <a href="#">
                   <img
                     src={img.src}
                     alt={`Imagen de emprendedor ${index}`}
-                    className="object-contain w-10/12 h-full cursor-pointer transition-opacity duration-300 group-hover:opacity-60 "
+                    className="object-contain w-10/12 mx-auto h-full cursor-pointer transition-opacity duration-300 group-hover:opacity-60 "
                   />
 
                   </a>
