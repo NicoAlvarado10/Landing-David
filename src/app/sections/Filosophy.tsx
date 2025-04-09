@@ -9,7 +9,7 @@ export const Filosophy = () => {
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 max-md:gap-4 justify-between">
 
           {/* Texto animado */}
-          <div className="w-full mx-auto  flex flex-col gap-6 max-md:order-2">
+          <div className="w-full mx-auto  xl:pt-8 flex flex-col gap-6 max-md:order-2">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ export const Filosophy = () => {
           >
             <img
               src={menImg.src}
-              className="h-full drop-shadow-img mx-auto object-cover filosofia-img"
+              className="h-full drop-shadow-img mx-auto object-cover xl:w-full filosofia-img"
               alt="Imagen de barbería"
             />
           </motion.div>

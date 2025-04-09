@@ -62,7 +62,7 @@ export default function PreFooter() {
           {/* Botón */}
           <motion.a
             href="#"
-            className="px-6 py-2 md:px-12 md:py-3 border rounded-full border-white text-white absolute top-[70%] left-[50%] transform -translate-x-1/2"
+            className="px-6 py-2  md:px-12 md:py-3 border rounded-full border-white text-white absolute top-[70%] left-[50%] transform -translate-x-1/2"
             style={{ fontSize: 'clamp(0.875rem, 1vw, 1rem)' }}
             variants={scaleUp}
           >
@@ -81,7 +81,7 @@ export default function PreFooter() {
             <img
               src={logo.src}
               alt="logo de el toke restaurant"
-              className="w-8/12 max-sm:w-4/12"
+              className="w-8/12 xl:w-11/12 max-sm:w-4/12"
             />
           </motion.a>
 
@@ -90,14 +90,14 @@ export default function PreFooter() {
               <img
                 src={instagramImg.src}
                 alt="icono de instagram"
-                className="w-8 max-sm:w-6"
+                className="w-8 xl:w-16 max-sm:w-6"
               />
             </motion.a>
             <motion.a href="#" variants={fadeUp} custom={3}>
               <img
                 src={facebookImg.src}
                 alt="icono de facebook"
-                className="w-8 max-sm:w-6"
+                className="w-8 xl:w-16 max-sm:w-6"
               />
             </motion.a>
           </div>

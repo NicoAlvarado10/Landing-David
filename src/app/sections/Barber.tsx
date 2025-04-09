@@ -10,7 +10,7 @@ export const Barber = () => {
           
           {/* Texto con animación */}
           <div
-            className="w-full max-md:order-2 "
+            className="w-full max-md:order-2 xl:pt-8"
            
           >
             <motion.h3
@@ -58,7 +58,7 @@ export const Barber = () => {
           >
             <img
               src={barberImg.src}
-              className="h-full drop-shadow-img mx-auto   object-cover barberia-img"
+              className="h-full drop-shadow-img mx-auto xl:w-11/12   object-cover barberia-img"
               alt="Imagen de barbería"
             />
           </motion.div>

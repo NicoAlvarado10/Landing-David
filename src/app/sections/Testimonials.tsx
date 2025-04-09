@@ -5,7 +5,7 @@ import { Testimony } from '@components/app/components/Testimony'
 
 export default function Testimonials() {
   return (
-    <section className="flex flex-col py-20 max-w-9/12 max-xl:max-w-11/12 mx-auto testimonios">
+    <section className="flex flex-col xl:justify-center min-h-[90vh] max-sm:h-full py-10 max-w-9/12 max-xl:max-w-11/12 mx-auto testimonios">
       <motion.h2
         className="text-center font-quick tracking-widest font-extralight mb-6 uppercase"
         initial={{ opacity: 0, y: 30 }}
@@ -17,7 +17,7 @@ export default function Testimonials() {
       </motion.h2>
 
       <motion.div
-        className="flex items-center justify-center mb-12"
+        className="flex items-center justify-center mb-30 max-md:mb-12"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -28,7 +28,7 @@ export default function Testimonials() {
         <div className="h-px bg-primary w-24 md:w-24"></div>
       </motion.div>
 
-      <div className="grid grid-cols-3  max-xl:grid-cols-2 max-md:grid-cols-1  justify-center items-center gap-24">
+      <div className="grid grid-cols-3  max-xl:grid-cols-2 max-md:grid-cols-1 max-sm:w-10/12  justify-center items-center gap-24 max-sm:gap-6 max-md:w-8/12 mx-auto">
         {[0.4, 0.6, 0.8].map((delay, i) => (
           <motion.div
             key={i}

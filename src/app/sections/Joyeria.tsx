@@ -18,13 +18,13 @@ export const Joyeria = () => {
           >
             <img
               src={joyeryImg.src}
-              className="h-full drop-shadow-img mx-auto  object-cover joyeria-img"
+              className="h-full drop-shadow-img mx-auto xl:w-11/12 object-cover joyeria-img"
               alt="Imagen de joyería"
             />
           </motion.div>
 
           {/* Texto animado */}
-          <div className="w-full ">
+          <div className="w-full xl:pt-8">
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

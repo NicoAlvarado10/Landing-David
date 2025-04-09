@@ -22,7 +22,7 @@ h1{
   font-size: max(20px, 1.5vw);
 }
 h1 > span{
-  font-size: max(50px, 4.6vw);
+  font-size: max(65px, 5.9vw);
 }
 
 .li {
@@ -44,7 +44,7 @@ h1 > span{
 /* Aplica a la sección timeline */
 .timeline h2,
 .history h2 {
-  font-size: max(20px, 2.5vw);
+  font-size: max(30px, 2.5vw);
 }
 
 .timeline h3,
@@ -89,7 +89,7 @@ h1 > span{
   font-size: max(15px, 1vw);
 }
 #barber-section a {
-  font-size: max(20px, 1vw);
+  font-size: max(20px, 15px );
 }
 .joyeria h2 {
   font-size: max(35px, 2.5vw);
@@ -98,6 +98,9 @@ h1 > span{
   font-size: max(15px, 1vw);
 }
 .joyeria a {
+  font-size: max(20px, 15px);
+}
+.boton{
   font-size: max(20px, 1vw);
 }
 .joyeria h3{
@@ -125,15 +128,20 @@ h1 > span{
 .contact h2 {
   font-size: max(40px, 2.5vw);
 }
+.contact a{
+  font-size: max(20px, 15px);
+}
 @layer utilities {
   .btn {
-    text-align: center;
-    padding: 8px 40px;
     background: transparent;
-    border: 2px solid;
-    border-radius: 2rem;
-    transition: 0.3s ease;
+    border: 2px solid var(--color-primary);
+    border-radius: 100px;
+    padding: max(6px, 0.7vw) max(1.5rem, 3vw);
+
+    transition: all .35s ease-out;
+    cursor: pointer;
     transform: scale(1);
+
   }
 
   .btn:hover {
@@ -142,11 +150,7 @@ h1 > span{
 
     
 
-    @media (max-width:768px ){
-        .btn{
-            padding: 5px 20px;
-        }
-    }
+    
 }
 .lista::marker{
  
@@ -197,7 +201,7 @@ ul{
 
   .scroll-wrapper {
     position: absolute;
-    top:50%;
+    top:30%;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -331,11 +335,30 @@ ul{
 }
 
 
-/* tailwind.config.js: agregala si no está */
-scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+
+.swiper-pagination {
+  display: none !important;
 }
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 6px;
+  font-size: 16px !important;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
 }

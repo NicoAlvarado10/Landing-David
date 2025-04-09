@@ -8,13 +8,12 @@ import Contact from "@components/app/sections/Contact";
 import PreFooter from "@components/app/sections/PreFooter";
 import { Footer } from "@components/app/sections/Footer";
 import {ScrollSection} from "@components/app/sections/ScrollSection";
-import { Timeline } from "./components/timeline/Timelime";
-
+import { History } from "./sections/History";
 export default function Home() {
   return (
     <>
     <Hero/>
-    <Timeline/>
+    <History/>
     <ScrollSection/>
     <Social/>
     <Barber/>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export const TimelineStep = ({ item, index }: { item: TimelineData; index: number }) => {
 	return (
 		<div
-			className="relative z-[2] mt-10 py-[80px] grid grid-cols-[60px_1fr] md:grid-cols-[1fr_180px_1fr]"
+			className="relative z-[2] mt-10 py-[80px]  grid grid-cols-[60px_1fr] md:grid-cols-[1fr_180px_1fr]"
 			style={{
 				gridGap: "0px",
 				gridAutoColumns: "1fr",

@@ -15,8 +15,8 @@ export const Timeline = () => {
 
 	return (
 		<div
-			className="timeline z-[-10] mt-0 relative py-[4rem] w-full"
-			id="timeline"
+			className="timeline  z-[-10] mt-0 relative py-[4rem] w-full"
+			id="timeline "
 		>
 			<div className="w-full  mx-auto px-4">
 				{/* Section Title */}
@@ -25,7 +25,7 @@ export const Timeline = () => {
 				 whileInView={{ opacity: 1, y: 0 }}
 				 transition={{ duration: 0.8,}}
 				 viewport={{ once: true }}
-				className="mb-4 mt-6  max-lg:mt-4 text-primary text-xl md:text-6xl max-lg:text-center text-center py-12  max-xl:px-4  tracking-widest font-sedan  mx-auto ">
+				className="mb-4 mt-6  max-lg:mt-4 text-primary text-xl md:text-6xl max-lg:text-center text-center py-12   tracking-widest font-sedan  mx-auto ">
           Una Vida de Aprendizaje y Superación
         </motion.h2>
 
