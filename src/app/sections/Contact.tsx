@@ -45,7 +45,7 @@ export default function Contact() {
 
             <motion.a
               href="#"
-              className="btn relative inline-block text-white border-white text-lg font-sen overflow-hidden group hover:text-white"
+              className="btn relative inline-block text-white  text-lg font-sen overflow-hidden group hover:text-white border-white hover:border-primary"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}

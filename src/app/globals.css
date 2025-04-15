@@ -140,7 +140,7 @@ h1 > span{
 @layer utilities {
   .btn {
     background: transparent;
-    border: 2px solid var(--color-primary);
+    border: 2px solid ;
     border-radius: 100px;
     padding: max(6px, 0.7vw) max(1.5rem, 3vw);
 
