@@ -83,12 +83,16 @@ const Social = () => {
           <h2 className="text-primary text-5xl tracking-widest font-sedan max-sm:text-3xl">
             Sígueme!
           </h2>
-          <p className="mt-4 mb-8 max-md:pb-0 text-lg max-sm:text-base leading-8 tracking-widest  font-sedan">
+          <p className="mt-4 mb-8 max-md:pb-0 text-lg max-sm:text-base leading-8 tracking-widest  font-sen">
             Lo publicamos cada día en nuestra cuenta de Instagram
           </p>
-          <a className="btn boton text-primary font-sedan text-lg max-sm:text-base" href="#">
-            Síguenos!
-          </a>
+          <a
+  className="btn boton relative inline-block text-primary font-sen text-lg max-sm:text-base px-6 py-3 rounded bg-transparent border overflow-hidden group hover:text-white"
+  href="#"
+>
+  <span className="relative z-10">Síguenos!</span>
+  <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+</a>
         </motion.div>
       </div>
     </section>

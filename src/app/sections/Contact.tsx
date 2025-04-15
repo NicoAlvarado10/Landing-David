@@ -45,13 +45,15 @@ export default function Contact() {
 
             <motion.a
               href="#"
-              className="btn text-white border-white text-lg "
+              className="btn relative inline-block text-white border-white text-lg font-sen overflow-hidden group hover:text-white"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
             >
-              ¡Contáctanos!
+             
+              <span className="relative z-10"> Contactanos!</span>
+              <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
             </motion.a>
           </div>
         </div>

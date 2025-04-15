@@ -62,11 +62,13 @@ export default function PreFooter() {
           {/* Botón */}
           <motion.a
             href="#"
-            className="px-6 py-2  md:px-12 md:py-3 border rounded-full border-white text-white absolute top-[70%] left-[50%] transform -translate-x-1/2"
+            className="inline-block overflow-hidden  group  px-6 py-2 font-sen md:px-12 md:py-3 border rounded-full border-white  hover:border-primary text-white absolute top-[70%] left-[50%] transform -translate-x-1/2"
             style={{ fontSize: 'clamp(0.875rem, 1vw, 1rem)' }}
             variants={scaleUp}
           >
-            ¡Contáctanos!
+            
+            <span className="relative z-10">Contactanos!</span>
+            <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
           </motion.a>
         </motion.div>
 

@@ -146,15 +146,9 @@ h1 > span{
 
     transition: all .35s ease-out;
     cursor: pointer;
-    transform: scale(1);
 
   }
 
-  .btn:hover {
-    transform: scale(1.05);
-  }
-
-    
 
     
 }
@@ -350,17 +344,15 @@ ul{
 .swiper-button-prev,
 .swiper-button-next {
   color: white !important;
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 6px;
-  font-size: 16px !important;
-  border-radius: 9999px;
-  transition: background-color 0.3s ease;
+  padding: 4px 12px;
+  background-color:rgba(0, 0, 0, 0.411);
+  border-radius: 50%;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 1.5rem !important;                            
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-}
+
 
 @media (max-width: 768px) {
   .swiper-button-prev,
@@ -368,3 +360,28 @@ ul{
     display: none !important;
   }
 }
+
+@keyframes fadeUp {
+	from {
+		opacity: 0.2;
+		transform: translateY(60px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+.fade-up {
+	opacity: 0;
+	animation-name: fadeUp;
+	animation-duration: 0.8s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+	animation-timeline: view();
+	animation-range: entry 30% cover 90%;
+}
+
+

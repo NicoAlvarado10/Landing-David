@@ -62,9 +62,10 @@ export const Joyeria = () => {
             >
               <a
                 href="#"
-                className="btn border-primary text-lg text-primary joyeria-btn max-sm:text-base"
+                className="btn border-primary text-lg text-primary joyeria-btn max-sm:text-base relative inline-block  font-sen overflow-hidden group hover:text-white"
               >
-                Llámanos!
+               <span className="relative z-10">Llámanos!</span>
+               <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
               </a>
             </motion.div>
           </div>
