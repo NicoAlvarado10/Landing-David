@@ -13,7 +13,7 @@ export const Joyeria = () => {
             className="w-full h-full "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
             viewport={{ once: true }}
           >
             <img
@@ -29,7 +29,6 @@ export const Joyeria = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
               className="font-quick tracking-widest font-light joyeria-label max-sm:text-sm"
             >
               PRIVADO
@@ -38,7 +37,6 @@ export const Joyeria = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
               className="font-sedan text-5xl max-sm:text-3xl text-primary tracking-widest my-4 joyeria-title"
             >
               Joyería Exclusiva
@@ -47,7 +45,6 @@ export const Joyeria = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
               className="font-sedan tracking-widest text-xl mb-10 leading-10 joyeria-desc max-sm:text-base"
             >
               Brillando en el mundo de la joyería y la exportación de oro y diamantes <br />
@@ -58,14 +55,13 @@ export const Joyeria = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              viewport={{ once: true }}
             >
               <a
                 href="#"
                 className="btn border-primary text-lg text-primary joyeria-btn max-sm:text-base relative inline-block  font-sen overflow-hidden group hover:text-white"
               >
                <span className="relative z-10">Llámanos!</span>
-               <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+               <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-00 ease-in-out"></span>
               </a>
             </motion.div>
           </div>

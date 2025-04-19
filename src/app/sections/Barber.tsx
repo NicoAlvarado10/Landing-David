@@ -44,7 +44,7 @@ export const Barber = () => {
             <a href="#" className="btn  relative inline-block text-primary text-lg max-sm:text-base barberia-btn font-sen overflow-hidden group hover:text-white">
            
             <span className="relative z-10">Llámanos!</span>
-            <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+            <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-400 ease-in-out"></span>
             </a>
 
             </motion.div>

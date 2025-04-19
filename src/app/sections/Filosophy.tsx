@@ -14,7 +14,6 @@ export const Filosophy = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
               className="font-sedan text-5xl text-primary tracking-widest my-4 filosofia-title max-sm:text-3xl"
             >
               El éxito no es cuestión de suerte, es cuestión de decisión.
@@ -23,7 +22,6 @@ export const Filosophy = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
               className="font-sedan tracking-widest text-xl mb-10 leading-10 filosofia-desc max-sm:text-base"
             >
               He recorrido un camino lleno de desafíos y aprendizajes, y ahora quiero compartir mis estrategias contigo

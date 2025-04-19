@@ -68,7 +68,7 @@ export default function PreFooter() {
           >
             
             <span className="relative z-10">Contactanos!</span>
-            <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+            <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
           </motion.a>
         </motion.div>
 

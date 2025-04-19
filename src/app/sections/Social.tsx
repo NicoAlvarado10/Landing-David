@@ -10,15 +10,17 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import igLogoImg from '../../../public/assets/Vector.svg'
-import igImg1 from '../../../public/assets/ig-1.webp'
-import igImg2 from '../../../public/assets/ig-2.webp'
-import igImg3 from '../../../public/assets/ig-3.webp'
-import igImg4 from '../../../public/assets/ig-4.webp'
-import igImg5 from '../../../public/assets/ig-5.webp'
+import igImg1 from '../../../public/assets/social-1.webp'
+import igImg2 from '../../../public/assets/social-2.webp'
+import igImg3 from '../../../public/assets/social-3.webp'
+import igImg4 from '../../../public/assets/social-4.webp'
+import igImg5 from '../../../public/assets/social-5.webp'
+import igImg6 from '../../../public/assets/social-6.webp'
+import igImg7 from '../../../public/assets/social-7.webp'
 import bgIgImg from '../../../public/assets/bg-ig.webp'
 
 const Social = () => {
-  const images = [igImg1, igImg2, igImg3, igImg4, igImg5]
+  const images = [igImg1, igImg2, igImg3, igImg4, igImg5, igImg6, igImg7]
   const swiperRef = useRef<SwiperType | null>(null)
 
   return (
@@ -78,7 +80,6 @@ const Social = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          viewport={{ once: true }}
         >
           <h2 className="text-primary text-5xl tracking-widest font-sedan max-sm:text-3xl">
             Sígueme!
@@ -87,11 +88,11 @@ const Social = () => {
             Lo publicamos cada día en nuestra cuenta de Instagram
           </p>
           <a
-  className="btn boton relative inline-block text-primary font-sen text-lg max-sm:text-base px-6 py-3 rounded bg-transparent border overflow-hidden group hover:text-white"
+  className="btn boton relative inline-block text-primary font-sen text-lg max-sm:text-base rounded bg-transparent border overflow-hidden group hover:text-white"
   href="#"
 >
   <span className="relative z-10">Síguenos!</span>
-  <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+  <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
 </a>
         </motion.div>
       </div>

@@ -107,7 +107,7 @@ h1 > span{
   font-size: max(20px, 15px);
 }
 .boton{
-  font-size: max(20px, 1vw);
+  font-size: max(20px, 15px);
 }
 .joyeria h3{
   font-size: max(12px, 1vw);
@@ -142,9 +142,9 @@ h1 > span{
     background: transparent;
     border: 2px solid ;
     border-radius: 100px;
-    padding: max(6px, 0.7vw) max(1.5rem, 3vw);
+    padding: max(5px, 0.5vw) max(1rem, 2.5vw);
 
-    transition: all .35s ease-out;
+    transition: all .20s ease-out;
     cursor: pointer;
 
   }
