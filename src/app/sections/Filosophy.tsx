@@ -29,19 +29,16 @@ export const Filosophy = () => {
           </div>
 
           {/* Imagen animada */}
-          <motion.div
+          <div
             className="h-full w-full "
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
+
           >
             <img
               src={menImg.src}
               className="mx-auto object-contain drop-shadow-img xl:w-full "
               alt="Imagen de david navarro"
             />
-          </motion.div>
+          </div>
 
         </div>
       </div>

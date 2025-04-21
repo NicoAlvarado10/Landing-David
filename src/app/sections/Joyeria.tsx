@@ -9,12 +9,8 @@ export const Joyeria = () => {
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 max-md:gap-2 justify-between">
 
           {/* Imagen animada */}
-          <motion.div
+          <div
             className="w-full h-full "
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
           >
             <img
               src={joyeryImg.src}
@@ -22,7 +18,7 @@ export const Joyeria = () => {
               alt="Imagen de joyería"
              
             />
-          </motion.div>
+          </div>
 
           {/* Texto animado */}
           <div className="w-full xl:pt-8">
