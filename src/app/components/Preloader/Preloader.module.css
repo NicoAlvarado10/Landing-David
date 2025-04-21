@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     color: var(--color-primary);
-    font-size: max(4rem, 5vw);
+    font-size: max(35px, 1.5vw);
     position: absolute;
     z-index: 1;
     font-family: var(--font-sedan);
