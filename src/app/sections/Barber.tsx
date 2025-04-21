@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import barberImg from '../../../public/assets/barbery.webp'
+import barberImg from '../../../public/assets/barbery-1.webp'
 
 export const Barber = () => {
   return (
@@ -60,7 +60,7 @@ export const Barber = () => {
           >
             <img
               src={barberImg.src}
-              className="h-full drop-shadow-img mx-auto xl:w-11/12   object-cover barberia-img"
+              className="h-full drop-shadow-img mx-auto xl:w-11/12   object-contain barberia-img"
               alt="Imagen de barbería"
             />
           </motion.div>

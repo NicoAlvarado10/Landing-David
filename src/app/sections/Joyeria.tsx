@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import joyeryImg from '../../../public/assets/joyery-2.webp'
+import joyeryImg from '../../../public/assets/joyery-3.webp'
 
 export const Joyeria = () => {
   return (
@@ -18,7 +18,7 @@ export const Joyeria = () => {
           >
             <img
               src={joyeryImg.src}
-              className="h-full drop-shadow-img mx-auto xl:w-11/12 object-cover joyeria-img"
+              className="h-full drop-shadow-img mx-auto xl:w-11/12 object-contain joyeria-img"
               alt="Imagen de joyería"
             />
           </motion.div>

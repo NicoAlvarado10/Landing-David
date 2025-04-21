@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import menImg from '../../../public/assets/filosophy.webp'
+import menImg from '../../../public/assets/filosophy-1.webp'
 
 export const Filosophy = () => {
   return (
@@ -38,7 +38,7 @@ export const Filosophy = () => {
           >
             <img
               src={menImg.src}
-              className="h-full drop-shadow-img mx-auto object-cover xl:w-full filosofia-img"
+              className="h-full drop-shadow-img mx-auto object-contain xl:w-full filosofia-img"
               alt="Imagen de barbería"
             />
           </motion.div>

@@ -10,7 +10,7 @@ export const ScrollSection = () => {
 <section className="infinite-wrapper ">
   <div className="scroll-tracking">
     {duplicatedWords.map((word, index) => (
-      <>
+      <div className="flex items-center">
         <span className="word tracking-widest">
           {word.toUpperCase()}
         </span>
@@ -19,7 +19,7 @@ export const ScrollSection = () => {
             •
           </span>
         )}
-      </>
+      </div>
     ))}
   </div>
 </section>
