@@ -52,11 +52,11 @@ export const Barber = () => {
 
           {/* Imagen con animación */}
           <div
-            className="h-full w-full "
+            className="h-full w-full relative drop-shadow-img"
           >
             <img
               src={barberImg.src}
-              className=" mx-auto xl:w-11/12 drop-shadow-img   object-contain "
+              className=" mx-auto xl:w-11/12   object-contain "
               alt="Imagen de barbería"
             />
           </div>

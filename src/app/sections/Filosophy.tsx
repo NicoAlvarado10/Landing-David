@@ -30,12 +30,12 @@ export const Filosophy = () => {
 
           {/* Imagen animada */}
           <div
-            className="h-full w-full "
+            className="h-full w-full relative drop-shadow-img "
 
           >
             <img
               src={menImg.src}
-              className="mx-auto object-contain drop-shadow-img xl:w-full "
+              className="mx-auto object-contain xl:w-full "
               alt="Imagen de david navarro"
             />
           </div>

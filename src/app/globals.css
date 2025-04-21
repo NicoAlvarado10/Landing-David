@@ -248,9 +248,22 @@ ul{
   }
 
   .drop-shadow-img {
-    filter: drop-shadow(0px 0px 50px #eecbab5a);
+    position: relative;
   }
-
+  
+  .drop-shadow-img::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 100%;
+    background: #eecbab5e;
+    filter: blur(60px);
+    z-index: -1;
+  }
+  
   .testimoni{
     border: 4px solid var(--color-primary);
 		border-radius: 3rem;

@@ -10,11 +10,11 @@ export const Joyeria = () => {
 
           {/* Imagen animada */}
           <div
-            className="w-full h-full "
+            className="w-full h-full relative  drop-shadow-img "
           >
             <img
               src={joyeryImg.src}
-              className=" mx-auto xl:w-11/12 drop-shadow-img object-contain"
+              className=" mx-auto xl:w-11/12  object-contain"
               alt="Imagen de joyería"
              
             />
@@ -58,7 +58,7 @@ export const Joyeria = () => {
                 className="btn border-primary text-lg text-primary joyeria-btn max-sm:text-base relative inline-block  font-sen overflow-hidden group hover:text-white"
               >
                <span className="relative z-10">Llámanos!</span>
-               <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-00 ease-in-out"></span>
+               <span className="absolute inset-0 bg-[#d1a57feb] -translate-x-full group-hover:translate-x-0 transition-transform duration-0 ease-in-out"></span>
               </a>
             </motion.div>
           </div>
