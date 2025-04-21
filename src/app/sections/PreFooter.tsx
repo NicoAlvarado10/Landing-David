@@ -100,6 +100,7 @@ export default function PreFooter() {
                 src={facebookImg.src}
                 alt="icono de facebook"
                 className="w-8 xl:w-16 max-sm:w-6"
+                loading="lazy"
               />
             </motion.a>
           </div>

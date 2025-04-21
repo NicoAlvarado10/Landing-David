@@ -60,9 +60,10 @@ export default function Carousel() {
         >
           {images.map((src, idx) => (
             <img
+              loading='lazy'
               key={idx}
               src={src}
-              alt={`imagen-${idx}`}
+              alt={`imagen del emprendedor`}
               className="w-[180px] md:w-[240px] h-[260px] object-cover rounded-xl shadow-lg flex-shrink-0 snap-start"
             />
           ))}

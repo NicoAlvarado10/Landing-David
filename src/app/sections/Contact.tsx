@@ -61,6 +61,7 @@ export default function Contact() {
         {/* Imagen */}
         <div className='basis-6/12'>
           <img 
+          loading='lazy'
             src={barberImg.src} 
             alt="Imagen de Barbería"
             className="gradiente-barber object-cover mx-auto max-sm:h-8/12 max-sm:w-full h-full"

@@ -20,7 +20,6 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false); // Finaliza el loading después de 2 segundos.
-      document.body.style.cursor = 'default'; // Cambia el cursor a su valor por defecto.
       window.scrollTo(0, 0); // Vuelve al principio de la página al cargar.
     }, 2000);
 

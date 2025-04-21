@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import starsImg from '../../../public/assets/Layer_1-2.svg'
-import heroImg from '../../../public/assets/hero-1.webp'
+import heroImg from '../../../public/assets/david-hero.webp'
 import ellipseImg from '../../../public/assets/Ellipse-4.webp'
 
 const text = 'DAVID NNAVARRO'

@@ -4,9 +4,9 @@ import menImg from '../../../public/assets/grupo-3.webp'
 
 export const Filosophy = () => {
   return (
-    <section className="py-20 max-md:py-10 filosofia">
+    <section className="py-20 max-md:py-10 filosofia max-sm:h-full">
       <div className="max-w-9/12 max-xl:max-w-11/12 mx-auto px-4">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 max-md:gap-4 justify-between">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 max-md:gap-2 justify-between">
 
           {/* Texto animado */}
           <div className="w-full mx-auto  xl:pt-8 flex flex-col gap-6 max-md:order-2">
@@ -37,8 +37,9 @@ export const Filosophy = () => {
             viewport={{ once: true }}
           >
             <img
+            loading='lazy'
               src={menImg.src}
-              className="h-full drop-shadow-img mx-auto object-contain xl:w-full filosofia-img"
+              className=" drop-shadow-img mx-auto object-contain xl:w-full filosofia-img"
               alt="Imagen de barbería"
             />
           </motion.div>
