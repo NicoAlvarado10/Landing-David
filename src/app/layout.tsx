@@ -3,15 +3,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 
-import { Antonio, Quicksand, Sen, Syne, Archivo_Black, Poppins, Sedan } from 'next/font/google';
+import { Quicksand, Sen, Syne, Archivo_Black, Poppins, Sedan, Antonio } from 'next/font/google';
 
-export const antonio = Antonio({ subsets: ['latin'], variable: '--font-antonio', weight: ['400', '700'] });
-export const quicksand = Quicksand({ subsets: ['latin'], variable: '--font-quicksand', weight: ['400', '700'] });
-export const sen = Sen({ subsets: ['latin'], variable: '--font-sen', weight: ['400', '700'] });
-export const syne = Syne({ subsets: ['latin'], variable: '--font-syne', weight: ['400', '700'] });
-export const archivoBlack = Archivo_Black({ subsets: ['latin'], variable: '--font-archivo-black', weight: '400' });
-export const poppins = Poppins({ subsets: ['latin'], variable: '--font-poppins', weight: ['400', '600', '700'] });
-export const sedan = Sedan({ subsets: ['latin'], variable: '--font-sedan', weight: '400' });
+ const antonio = Antonio({ subsets: ['latin'], variable: '--font-antonio' });
+ const quicksand = Quicksand({ subsets: ['latin'], variable: '--font-quicksand', weight: ['400', '700'] });
+ const sen = Sen({ subsets: ['latin'], variable: '--font-sen', weight: ['400', '700'] });
+ const syne = Syne({ subsets: ['latin'], variable: '--font-syne', weight: ['400', '700'] });
+ const archivoBlack = Archivo_Black({ subsets: ['latin'], variable: '--font-archivo-black', weight: '400' });
+ const poppins = Poppins({ subsets: ['latin'], variable: '--font-poppins', weight: ['400', '600', '700'] });
+ const sedan = Sedan({ subsets: ['latin'], variable: '--font-sedan', weight: '400' });
 
 export const metadata: Metadata = {
   title: "David Navarro | De la Adversidad al Éxito",
