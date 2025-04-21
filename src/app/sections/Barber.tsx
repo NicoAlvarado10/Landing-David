@@ -60,7 +60,6 @@ export const Barber = () => {
           >
             <img
               src={barberImg.src}
-              loading='lazy'
               className=" mx-auto xl:w-11/12 drop-shadow-img   object-contain barberia-img"
               alt="Imagen de barbería"
             />

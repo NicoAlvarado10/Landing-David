@@ -20,7 +20,7 @@ export const Joyeria = () => {
               src={joyeryImg.src}
               className=" mx-auto xl:w-11/12 drop-shadow-img object-contain joyeria-img"
               alt="Imagen de joyería"
-              loading='lazy'
+             
             />
           </motion.div>
 

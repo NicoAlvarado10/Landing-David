@@ -37,10 +37,9 @@ export const Filosophy = () => {
             viewport={{ once: true }}
           >
             <img
-            loading='lazy'
               src={menImg.src}
               className="mx-auto object-contain drop-shadow-img xl:w-full filosofia-img"
-              alt="Imagen de barbería"
+              alt="Imagen de david navarro"
             />
           </motion.div>
 
