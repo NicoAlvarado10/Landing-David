@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import joyeryImg from '../../../public/assets/joyery-3.webp'
+import joyeryImg from '../../../public/assets/grupo-2.webp'
 
 export const Joyeria = () => {
   return (

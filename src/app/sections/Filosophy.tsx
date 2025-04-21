@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import menImg from '../../../public/assets/filosophy-1.webp'
+import menImg from '../../../public/assets/grupo-3.webp'
 
 export const Filosophy = () => {
   return (
