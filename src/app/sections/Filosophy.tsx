@@ -30,7 +30,7 @@ export const Filosophy = () => {
 
           {/* Imagen animada */}
           <motion.div
-            className="h-full w-full"
+            className="h-full w-full  drop-shadow-img "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -39,7 +39,7 @@ export const Filosophy = () => {
             <img
             loading='lazy'
               src={menImg.src}
-              className=" drop-shadow-img mx-auto object-contain xl:w-full filosofia-img"
+              className="mx-auto object-contain xl:w-full filosofia-img"
               alt="Imagen de barbería"
             />
           </motion.div>

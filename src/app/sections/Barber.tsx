@@ -52,7 +52,7 @@ export const Barber = () => {
 
           {/* Imagen con animación */}
           <motion.div
-            className="h-full w-full"
+            className="h-full w-full  drop-shadow-img"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -61,7 +61,7 @@ export const Barber = () => {
             <img
               src={barberImg.src}
               loading='lazy'
-              className=" drop-shadow-img mx-auto xl:w-11/12   object-contain barberia-img"
+              className=" mx-auto xl:w-11/12   object-contain barberia-img"
               alt="Imagen de barbería"
             />
           </motion.div>

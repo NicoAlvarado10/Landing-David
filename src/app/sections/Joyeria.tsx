@@ -10,7 +10,7 @@ export const Joyeria = () => {
 
           {/* Imagen animada */}
           <motion.div
-            className="w-full h-full "
+            className="w-full h-full drop-shadow-img "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -18,7 +18,7 @@ export const Joyeria = () => {
           >
             <img
               src={joyeryImg.src}
-              className=" drop-shadow-img mx-auto xl:w-11/12 object-contain joyeria-img"
+              className=" mx-auto xl:w-11/12 object-contain joyeria-img"
               alt="Imagen de joyería"
               loading='lazy'
             />
