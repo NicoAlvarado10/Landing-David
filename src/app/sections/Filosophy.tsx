@@ -4,8 +4,8 @@ import menImg from '../../../public/assets/grupo-3.webp'
 
 export const Filosophy = () => {
   return (
-    <section className="py-20 max-md:py-10 filosofia max-sm:h-full">
-      <div className="max-w-9/12 max-xl:max-w-11/12 mx-auto px-4">
+    <section className="py-20 max-md:py-10 filosofia ">
+      <div className="max-w-9/12 max-xl:max-w-11/12 mx-auto px-4 max-sm:h-full">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 max-md:gap-2 justify-between">
 
           {/* Texto animado */}
@@ -30,15 +30,15 @@ export const Filosophy = () => {
 
           {/* Imagen animada */}
           <motion.div
-            className="h-full w-full  drop-shadow-img "
-            initial={{ opacity: 0, y: 50 }}
+            className="h-full w-full "
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <img
               src={menImg.src}
-              className="mx-auto object-contain drop-shadow-img xl:w-full filosofia-img"
+              className="mx-auto object-contain drop-shadow-img xl:w-full "
               alt="Imagen de david navarro"
             />
           </motion.div>

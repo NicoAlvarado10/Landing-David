@@ -4,8 +4,8 @@ import barberImg from '../../../public/assets/grupo-1.webp'
 
 export const Barber = () => {
   return (
-    <section className="py-20 max-md:py-10 max-sm:h-full" id="barber-section">
-      <div className="max-w-10/12 max-xl:max-w-11/12 mx-auto px-4 barberia">
+    <section className="py-20 max-md:py-10 " id="barber-section">
+      <div className="max-w-10/12 max-xl:max-w-11/12 mx-auto px-4 barberia max-sm:h-full">
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 max-md:gap-2 justify-between">
           
           {/* Texto con animación */}
@@ -52,15 +52,15 @@ export const Barber = () => {
 
           {/* Imagen con animación */}
           <motion.div
-            className="h-full w-full  drop-shadow-img"
-            initial={{ opacity: 0, y: 50 }}
+            className="h-full w-full "
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
             <img
               src={barberImg.src}
-              className=" mx-auto xl:w-11/12 drop-shadow-img   object-contain barberia-img"
+              className=" mx-auto xl:w-11/12 drop-shadow-img   object-contain "
               alt="Imagen de barbería"
             />
           </motion.div>
