@@ -18,31 +18,7 @@ export const Footer = () => {
   return (
     <footer className="py-10 w-full max-md:px-4 max-md:py-5">
       <div className="max-w-7xl mx-auto flex flex-col gap-10">
-        
-        <motion.div
-          className="flex items-center text-zinc-200 max-sm:flex-col max-md:items-center max-md:gap-4 justify-center gap-20"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-        >
-          <motion.a
-            href="#"
-            className="font-sen tracking-wider max-md:text-xs"
-            variants={fadeUp}
-            custom={1}
-          >
-            Condiciones de uso y privacidad
-          </motion.a>
-          <motion.a
-            href="#"
-            className="font-sen tracking-wider max-md:text-xs"
-            variants={fadeUp}
-            custom={2}
-          >
-            Política de cookies
-          </motion.a>
-        </motion.div>
-
+      
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -51,7 +27,7 @@ export const Footer = () => {
           custom={3}
         >
           <p className="font-sen text-center tracking-wider text-zinc-200 max-sm:text-xs">
-            Copyright © El Toke Restaurant. Todos los derechos reservados.
+            Copyright © David Luxor. Todos los derechos reservados.
             Sitio web creado por{" "}
             <motion.a
               href="#"
