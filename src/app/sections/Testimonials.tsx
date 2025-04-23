@@ -4,6 +4,24 @@ import user from '../../../public/assets/testimony.webp'
 import { Testimony } from '@components/app/components/Testimony'
 
 export default function Testimonials() {
+  const testimonialsData = [
+    {
+      descp: "Sitio espectacular, muy buen servicio con una cocina muy cuidada, lo que probamos todo buenísimo y un precio muy razonable. Una suerte tenerlo cerca.",
+      person: "Jhon Smith",
+      image: user.src,
+    },
+    {
+      descp: "El restaurante es precioso, con toda su decoración y mobiliario muy agradables. Las croquetas de boletus están increíbles y el personal amable. Volveremos.",
+      person: "Jhon Smith",
+      image: user.src,
+    },
+    {
+      descp: "Sitio muy acogedor y el personal muy agradable. Comida rica y buenos precios. Salimos encantados, impecable la limpieza. Sin duda repetiremos.",
+      person: "Jhon Smith",
+      image: user.src,
+    },
+  ];
+
   return (
     <section className="flex flex-col xl:justify-center min-h-[90vh] max-sm:h-full py-10 max-w-9/12 max-xl:max-w-11/12 mx-auto testimonios">
       <motion.h2
@@ -28,19 +46,19 @@ export default function Testimonials() {
         <div className="h-px bg-primary w-24 md:w-24"></div>
       </motion.div>
 
-      <div className="grid grid-cols-3  max-xl:grid-cols-2 max-md:grid-cols-1 max-sm:w-10/12  justify-center items-center gap-24 max-sm:gap-6 max-md:w-8/12 mx-auto">
-        {[0.4, 0.6, 0.8].map((delay, i) => (
+      <div className="grid grid-cols-3 max-xl:grid-cols-2 max-md:grid-cols-1 max-sm:w-10/12 justify-center items-center gap-24 max-sm:gap-6 max-md:w-8/12 mx-auto">
+        {testimonialsData.map((testimonial, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay }}
+            transition={{ duration: 0.8, delay: 0.4 + i * 0.2 }}
             viewport={{ once: true }}
           >
             <Testimony
-              descp="Sitio muy acogedor y el personal muy agradable. Comida rica y buenos precios. Salimos encantados, impecable la limpieza. Sin duda repetiremos"
-              person="Jhon Smith"
-              image={user.src}
+              descp={testimonial.descp}
+              person={testimonial.person}
+              image={testimonial.image}
             />
           </motion.div>
         ))}
