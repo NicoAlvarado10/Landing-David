@@ -39,7 +39,7 @@ export default function Preloader() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
-                <motion.p variants={opacity} initial="initial" animate="enter"><span></span>{words[index]}</motion.p>
+                <motion.p variants={opacity} initial="initial" animate="enter"><span className=' tracking-wider'></span>{words[index]}</motion.p>
                 <svg>
                     <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
                 </svg>

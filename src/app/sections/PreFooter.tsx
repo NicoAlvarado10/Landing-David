@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import facebookImg from "../../../public/assets/Vector-1.svg";
 import instagramImg from "../../../public/assets/Vector.svg";
 import logo from "../../../public/assets/logo.webp";
-import ctaBg from "../../../public/assets/cta-3.webp";
+import ctaBg from "../../../public/assets/prefooter.jpg";
 
 const fadeDown = {
   hidden: { opacity: 0, y: -30 },
@@ -43,7 +43,7 @@ export default function PreFooter() {
         
         {/* Círculo con fondo */}
         <motion.div
-          className="relative aspect-square w-5/12 max-sm:w-9/12 bg-cover rounded-full mx-auto"
+          className="relative aspect-square w-5/12 max-sm:w-9/12 bg-cover bg-center rounded-full mx-auto"
           style={{ backgroundImage: `url(${ctaBg.src})` }}
           initial="hidden"
           whileInView="visible"

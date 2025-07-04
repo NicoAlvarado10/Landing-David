@@ -1,10 +1,10 @@
 'use client'
 import { motion } from 'framer-motion'
 import starsImg from '../../../public/assets/Layer_1-2.svg'
-import heroImg from '../../../public/assets/david-hero.webp'
+import heroImg from '../../../public/assets/men.jpg'
 import ellipseImg from '../../../public/assets/Ellipse-4.webp'
 
-const text = 'DAVID NNAVARRO'
+const text = 'OLIVER JAMES'
 const repeatedText = Array(10).fill(text)
 const duplicatedText = [...repeatedText, ...repeatedText]
 

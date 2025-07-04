@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import barberImg from '../../../public/assets/barber.webp';
+import barberImg from '../../../public/assets/barber.jpg';
 
 export default function Contact() {
   return (
@@ -29,7 +29,7 @@ export default function Contact() {
               viewport={{ once: true }}
             >
               Telefono: <br />
-              <span className="font-archivo font-bold tracking-normal">912108960</span>
+              <span className="font-archivo font-bold tracking-normal">918473655</span>
             </motion.h3>
 
             <motion.h3
@@ -40,7 +40,7 @@ export default function Contact() {
               viewport={{ once: true }}
             >
               Email: <br />
-              <span className="font-archivo font-bold tracking-normal">info@eltoke.com</span>
+              <span className="font-archivo font-bold tracking-normal">info@oliverjames.com</span>
             </motion.h3>
 
             <motion.a

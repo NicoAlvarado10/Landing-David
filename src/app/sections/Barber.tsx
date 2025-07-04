@@ -1,6 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
-import barberImg from '../../../public/assets/grupo-1.webp'
+import barberImg from '../../../public/assets/barber.jpg'
 
 export const Barber = () => {
   return (

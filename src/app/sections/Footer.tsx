@@ -27,15 +27,17 @@ export const Footer = () => {
           custom={3}
         >
           <p className="font-sen text-center tracking-wider text-zinc-200 max-sm:text-xs">
-            Copyright © David Luxor. Todos los derechos reservados.
+            Copyright © Oliver James. Todos los derechos reservados.
             Sitio web creado por{" "}
             <motion.a
-              href="#"
+              href="https://nico-freelance.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hover:underline italic inline-block"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              Wow Web Group
+              Nicolás Alvarado
             </motion.a>
           </p>
         </motion.div>

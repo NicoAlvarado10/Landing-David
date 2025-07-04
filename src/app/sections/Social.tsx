@@ -10,17 +10,16 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import igLogoImg from '../../../public/assets/Vector.svg'
-import igImg1 from '../../../public/assets/social-1.webp'
-import igImg2 from '../../../public/assets/social-2.webp'
-import igImg3 from '../../../public/assets/social-3.webp'
-import igImg4 from '../../../public/assets/social-4.webp'
-import igImg5 from '../../../public/assets/social-5.webp'
-import igImg6 from '../../../public/assets/social-6.webp'
-import igImg7 from '../../../public/assets/social-7.webp'
+
+import igImg3 from '../../../public/assets/calltoaction.jpg'
+import igImg4 from '../../../public/assets/prefooter.jpg'
+import igImg5 from '../../../public/assets/men.jpg'
+import igImg6 from '../../../public/assets/barber.jpg'
+import igImg7 from '../../../public/assets/joyery.jpg'
 import bgIgImg from '../../../public/assets/bg-ig.webp'
 
 const Social = () => {
-  const images = [igImg1, igImg2, igImg3, igImg4, igImg5, igImg6, igImg7]
+  const images = [igImg3, igImg4, igImg5, igImg6, igImg7]
   const swiperRef = useRef<SwiperType | null>(null)
 
   return (
@@ -56,7 +55,7 @@ const Social = () => {
                   <img
                     src={img.src}
                     alt={`Imagen de emprendedor ${index}`}
-                    className="object-contain w-10/12 mx-auto h-full cursor-pointer transition-opacity duration-300 group-hover:opacity-60 "
+                    className="object-cover aspect-square  w-10/12 mx-auto h-full cursor-pointer transition-opacity duration-300 group-hover:opacity-60 "
                   />
 
                   </a>
