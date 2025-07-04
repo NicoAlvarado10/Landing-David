@@ -14,14 +14,14 @@ import { Quicksand, Sen, Syne, Archivo_Black, Poppins, Sedan, Antonio } from 'ne
  const sedan = Sedan({ subsets: ['latin'], variable: '--font-sedan', weight: '400' });
 
 export const metadata: Metadata = {
-  title: "David Navarro | De la Adversidad al Éxito",
-  description: "Descubre la inspiradora historia de David Navarro: de trabajar en una pizzería a convertirse en un exitoso emprendedor con múltiples negocios.",
-  keywords: ["David Navarro", "emprendimiento", "historia de éxito", "negocios", "superación personal", "liderazgo"],
-  authors: [{ name: "David Navarro" }],
-  creator: "Wow Web Group",
+  title: "Oliver James | De la Adversidad al Éxito",
+  description: "Descubre la inspiradora historia de Oliver James: de trabajar en una pizzería a convertirse en un exitoso emprendedor con múltiples negocios.",
+  keywords: ["Oliver James", "emprendimiento", "historia de éxito", "negocios", "superación personal", "liderazgo"],
+  authors: [{ name: "Oliver James" }],
+  creator: "Nicolás Alvarado",
   openGraph: {
-    title: "David Navarro | De la Adversidad al Éxito",
-    description: "Conoce la trayectoria de David Navarro y cómo transformó sus fracasos en grandes oportunidades.",// pon tu dominio real acá
+    title: "Oliver James | De la Adversidad al Éxito",
+    description: "Conoce la trayectoria de Oliver James y cómo transformó sus fracasos en grandes oportunidades.",
     locale: "es_ES",
     type: "website",
   },
